@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarvepalli Manoj Kumar — Cyber Security & Developer</title>
+    <meta name="description"
+        content="Portfolio of Sarvepalli Manoj Kumar — B.Tech Cyber Security graduate skilled in Java, IoT security, and Generative AI." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="extra.css" />
+</head>
+
+<body>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Background -->
+    <div class="bg-gradient"></div>
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-logo">MK<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about" id="nav-about">About</a></li>
+            <li><a href="#skills" id="nav-skills">Skills</a></li>
+            <li><a href="#projects" id="nav-projects">Projects</a></li>
+            <li><a href="#contact" id="nav-contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta" id="nav-cta-btn">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">✦ Open to Entry-Level Opportunities</div>
+            <h1 class="hero-title">
+                <span class="line">Hi, I'm <span class="gradient-text">Manoj</span></span>
+                <span class="line">Cyber Security <span class="gradient-text">Graduate</span></span>
+            </h1>
+            <p class="hero-subtitle">B.Tech graduate in Cyber Security with hands-on experience in Java development, IoT
+                security systems, and Generative AI. Passionate about building secure, intelligent solutions.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary" id="hero-projects-btn">View My Work</a>
+                <a href="#contact" class="btn btn-ghost" id="hero-contact-btn">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">3</span><span class="stat-label">Internships</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Projects</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">3</span><span class="stat-label">Certifications</span></div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-container">
+                <img src="profile.jpg" alt="Manoj Kumar" class="avatar-img" />
+            </div>
+            <div class="floating-card card-1">
+                <span class="card-icon">☕</span>
+                <div><strong>Java</strong><br><small>OOP & Spring</small></div>
+            </div>
+            <div class="floating-card card-2">
+                <span class="card-icon">🔐</span>
+                <div><strong>Cyber Sec</strong><br><small>Fundamentals</small></div>
+            </div>
+            <div class="floating-card card-3">
+                <span class="card-icon">🤖</span>
+                <div><strong>Gen AI</strong><br><small>LLM & Agents</small></div>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">Driven by <span class="gradient-text">security &amp; innovation</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a recent B.Tech graduate in Cyber Security from Prakasam Engineering College, with a strong
+                        interest in
+                        Java programming and software development. I love solving complex problems and building systems
+                        that are
+                        both secure and efficient.</p>
+                    <p>Through three internships across Cyber Security, Java Programming, and Generative AI, I've
+                        developed a
+                        well-rounded foundation in both defensive security practices and modern software development.
+                    </p>
+                    <p>I'm fluent in Telugu (native) and English, with basic proficiency in Hindi. When I'm not coding,
+                        I enjoy
+                        learning about the latest AI advancements and contributing to open-source repositories on
+                        GitHub.</p>
+                    <a href="mailto:sarvenallimanoj58@gmail.com" class="btn btn-outline" id="download-cv-btn">Contact Me →</a>
+                    <a href="resume.pdf" download="Manoj_Kumar_Resume.pdf" class="btn btn-primary" id="resume-btn">Download Resume ↓</a>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card reveal" id="about-card-1">
+                        <div class="info-icon">🎓</div>
+                        <h4>Education</h4>
+                        <p>B.Tech – CSE (Cyber Security)<br>Prakasam Engg. College, 2026<br>CGPA: 6.7</p>
+                    </div>
+                    <div class="info-card reveal" id="about-card-2">
+                        <div class="info-icon">💼</div>
+                        <h4>Experience</h4>
+                        <p>3 Internships completed<br>Gen AI · Java · Cyber Sec<br>ExcelR EdTech &amp; APSCHE</p>
+                    </div>
+                    <div class="info-card reveal" id="about-card-3">
+                        <div class="info-icon">🌍</div>
+                        <h4>Location</h4>
+                        <p>Andhra Pradesh, India<br>Open to Remote &amp; Relocation</p>
+                    </div>
+                    <div class="info-card reveal" id="about-card-4">
+                        <div class="info-icon">🏆</div>
+                        <h4>Certifications</h4>
+                        <p>Java Programming<br>NPTEL – IoT<br>Generative AI (APSCHE)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My <span class="gradient-text">skill set</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal" id="skill-cat-1">
+                    <h3>Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span>Java &amp; OOP</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span>Spring Boot</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span>HTML &amp; CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span>MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:72%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category reveal" id="skill-cat-2">
+                    <h3>Security &amp; AI</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span>Cyber Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span>AES Encryption</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:72%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span>Generative AI / LLMs</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span>Prompt Engineering</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category reveal" id="skill-cat-3">
+                    <h3>Tools &amp; Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span>VS Code &amp; Eclipse</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span>GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span>IoT / Cloud</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:68%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span>MS Office Suite</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--pct:85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-pills">
+                <span class="pill">Java</span><span class="pill">Spring Boot</span><span class="pill">MySQL</span>
+                <span class="pill">HTML &amp; CSS</span><span class="pill">Cyber Security</span><span class="pill">AES
+                    Encryption</span>
+                <span class="pill">IoT</span><span class="pill">Generative AI</span><span class="pill">LLMs</span>
+                <span class="pill">Prompt Engineering</span><span class="pill">GitHub</span><span
+                    class="pill">Eclipse</span>
+                <span class="pill">Fog Computing</span><span class="pill">MVC Architecture</span><span
+                    class="pill">NPTEL
+                    IoT</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE / INTERNSHIPS -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Work Experience</span>
+                <h2 class="section-title">My <span class="gradient-text">internships</span></h2>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item reveal" id="intern-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2026</div>
+                        <h3>Generative AI Intern</h3>
+                        <span class="timeline-company">APSCHE — Andhra Pradesh</span>
+                        <ul>
+                            <li>Learned Generative AI and Agent AI concepts.</li>
+                            <li>Explored prompt engineering and LLM workflows.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal" id="intern-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <h3>Java Programming Intern</h3>
+                        <span class="timeline-company">ExcelR EdTech — India</span>
+                        <ul>
+                            <li>Worked on core Java and OOP concepts.</li>
+                            <li>Improved coding and problem-solving skills.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal" id="intern-3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3>Cyber Security Intern</h3>
+                        <span class="timeline-company">ExcelR EdTech — India</span>
+                        <ul>
+                            <li>Learned security principles and defensive techniques.</li>
+                            <li>Developed awareness of secure computing practices.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-dark" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I've Built</span>
+                <h2 class="section-title">Featured <span class="gradient-text">projects</span></h2>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card featured reveal" id="project-1">
+                    <div class="project-visual" style="--card-color: hsl(260,80%,60%)">
+                        <div class="project-mockup">
+                            <div class="browser-bar"><span></span><span></span><span></span></div>
+                            <div class="mockup-content">
+                                <div class="mockup-line wide"></div>
+                                <div class="mockup-line med"></div>
+                                <div class="proj-icon-big">🏥</div>
+                                <div class="mockup-grid">
+                                    <div class="mockup-block"></div>
+                                    <div class="mockup-block"></div>
+                                    <div class="mockup-block"></div>
+                                    <div class="mockup-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags"><span>IoT</span><span>Java</span><span>Fog
+                                Computing</span><span>AES</span></div>
+                        <h3>IoT Healthcare Security</h3>
+                        <p>Designed and developed a secure IoT healthcare system leveraging fog computing architecture.
+                            Improved
+                            data privacy and reduced latency using AES encryption algorithms — built as a final-year
+                            capstone project.
+                        </p>
+                        <div class="project-achievements">
+                            <div class="achievement-item">✅ AES Encryption for data privacy</div>
+                            <div class="achievement-item">✅ Fog Computing for reduced latency</div>
+                            <div class="achievement-item">✅ Presented as final-year capstone</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Manusarvepalli" class="link-btn" id="proj1-code"
+                                target="_blank">GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" id="project-2">
+                    <div class="project-visual" style="--card-color: hsl(195,80%,45%)">
+                        <div class="project-mockup small">
+                            <div class="browser-bar"><span></span><span></span><span></span></div>
+                            <div class="mockup-content">
+                                <div class="proj-icon-big">🏦</div>
+                                <div class="mockup-line med"></div>
+                                <div class="mockup-line short"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>MySQL</span></div>
+                        <h3>Smart Banking System</h3>
+                        <p>A full-featured banking management app with login, deposit, withdrawal, and balance tracking.
+                            Built with
+                            Java OOP, Spring Boot MVC, and MySQL backend integration.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Manusarvepalli" class="link-btn" id="proj2-code"
+                                target="_blank">GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Milestones</span>
+                <h2 class="section-title">Key <span class="gradient-text">achievements</span></h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card reveal" id="ach-1">
+                    <div class="ach-icon">🎯</div>
+                    <h4>Triple Internship</h4>
+                    <p>Completed internships in Cyber Security, Java Programming, and Generative AI — gaining diverse
+                        industry
+                        exposure.</p>
+                </div>
+                <div class="achievement-card reveal" id="ach-2">
+                    <div class="ach-icon">🔬</div>
+                    <h4>Capstone Project</h4>
+                    <p>Developed and presented an IoT healthcare security system as final-year capstone using fog
+                        computing and
+                        AES encryption.</p>
+                </div>
+                <div class="achievement-card reveal" id="ach-3">
+                    <div class="ach-icon">📜</div>
+                    <h4>Certifications</h4>
+                    <p>Earned certifications from NPTEL (IoT), Microsoft (Power BI), and APSCHE (Generative AI).</p>
+                </div>
+                <div class="achievement-card reveal" id="ach-4">
+                    <div class="ach-icon">📚</div>
+                    <h4>Academic Excellence</h4>
+                    <p>Scored CGPA 9.8 in SSC and 7.6 in Intermediate before graduating with a B.Tech in Cyber Security.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title">My <span class="gradient-text">certifications</span></h2>
+            </div>
+            <div class="certs-grid">
+
+                <div class="cert-card reveal" id="cert-1">
+                    <div class="cert-img-wrap">
+                        <img src="cert-microsoft-new.jpg" alt="Microsoft - Discover Data Analysis" class="cert-img"
+                            loading="lazy" />
+                        <div class="cert-overlay">
+                            <span class="cert-view">View Certificate ↗</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-issuer">🏢 Microsoft</div>
+                        <h4>Discover Data Analysis</h4>
+                        <span class="cert-date">July 28, 2025</span>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal" id="cert-2">
+                    <div class="cert-img-wrap">
+                        <img src="cert-genai.jpg" alt="Generative AI and Agentic AI" class="cert-img" loading="lazy" />
+                        <div class="cert-overlay">
+                            <span class="cert-view">View Certificate ↗</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-issuer">🎓 APSCHE &amp; ExcelR EdTech</div>
+                        <h4>Generative AI &amp; Agentic AI</h4>
+                        <span class="cert-date">Dec 2025 – Apr 2026</span>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal" id="cert-3">
+                    <div class="cert-img-wrap">
+                        <img src="cert-cybersec.jpg" alt="Cyber Security Internship" class="cert-img" loading="lazy" />
+                        <div class="cert-overlay">
+                            <span class="cert-view">View Certificate ↗</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-issuer">🔐 APSCHE &amp; ExcelR EdTech</div>
+                        <h4>Cyber Security</h4>
+                        <span class="cert-date">August 2, 2024</span>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal" id="cert-4">
+                    <div class="cert-img-wrap">
+                        <img src="cert-java.jpg" alt="Java Programming Internship" class="cert-img" loading="lazy" />
+                        <div class="cert-overlay">
+                            <span class="cert-view">View Certificate ↗</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-issuer">☕ APSCHE &amp; ExcelR EdTech</div>
+                        <h4>Java Programming</h4>
+                        <span class="cert-date">May – July 2025</span>
+                    </div>
+                </div>
+                <div class="cert-card reveal" id="cert-5">
+                    <div class="cert-img-wrap">
+                        <img src="cert-nptel.jpg" alt="NPTEL IoT" class="cert-img" loading="lazy" />
+                        <div class="cert-overlay">
+                            <span class="cert-view">View Certificate ↗</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-issuer">🎓 NPTEL – IIT Kharagpur</div>
+                        <h4>Introduction to Internet of Things</h4>
+                        <span class="cert-date">Jan – Apr 2025 (Elite)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's connect &amp; build something <span class="gradient-text">great</span>
+                </h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>I'm actively looking for entry-level opportunities in software development, cyber security, or
+                        AI. Feel
+                        free to reach out for collaborations, project ideas, or just to say hello!</p>
+                    <div class="contact-links">
+                        <a href="mailto:sarvenallimanoj58@gmail.com" class="contact-link" id="contact-email">
+                            <span class="contact-icon">✉️</span>
+                            <span>sarvenallimanoj58@gmail.com</span>
+                        </a>
+                        <a href="tel:+919440763030" class="contact-link" id="contact-phone">
+                            <span class="contact-icon">📞</span>
+                            <span>+91 9440763030</span>
+                        </a>
+                        <a href="https://github.com/Manusarvepalli" class="contact-link" id="contact-github"
+                            target="_blank">
+                            <span class="contact-icon">💻</span>
+                            <span>github.com/Manusarvepalli</span>
+                        </a>
+                        <a href="https://linkedin.com/in/manoj-sarvealli" class="contact-link" id="contact-linkedin"
+                            target="_blank">
+                            <span class="contact-icon">💼</span>
+                            <span>linkedin.com/in/manoj-sarvealli</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email-input">Email</label>
+                        <input type="email" id="contact-email-input" name="email" placeholder="your@email.com"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5"
+                            placeholder="Tell me about the opportunity..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width" id="contact-submit-btn">Send Message
+                        ✦</button>
+                    <div class="form-success" id="formSuccess">🎉 Message sent! I'll be in touch soon.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">MK<span class="dot">.</span></div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Sarvepalli Manoj Kumar. Built with ❤️</p>
+                <p class="footer-note">Open to opportunities</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
